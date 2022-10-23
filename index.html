@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупюрник 2.0</title>
+    <link type="image/x-icon" href="./img/pokupurnik.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="./img/pokupurnik.svg" rel="icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="tabak123"> pokupurnik</h1>
+    <p class="madeby">made by German Novikov</p>
+    <!-- <div class="spongebob"><img src="https://media.tenor.com/UoCKZCVXUQMAAAAM/chain-link-crypto.gif" alt=""></div> -->
+    <div class="container"> 
+        <div class="50rub cupura">
+            <img src="./img/50rub.jpg" alt="sometext" />
+            <button class="btn minus">-</button>
+            <b id="counter50">0</b>
+            <button class="btn plus">+</button>
+        </div>
+        <div class="100rub cupura">
+            <img src="./img/100rub.jpg" alt="sometext" />
+            <button class="btn minus hundred">-</button>
+            <b id="counter100">0</b>
+            <button class="btn plus hundred">+</button>
+        </div>    
+        <div class="500rub cupura">
+            <img src="./img/500rub.jpg" alt="sometext" />
+            <button class="btn fivehundred">-</button>
+            <b id="counter500">0</b>
+            <button class="btn fivehundred">+</button>
+        </div>
+             <div class="1000rub cupura">
+            <img src="./img/1000rub.jpg" alt="sometext" />
+            <button class="btn thousand">-</button>
+            <b id="counter1000">0</b>
+            <button class="btn thousand">+</button>
+        </div>
+        <div class="5000rub cupura">
+            <img src="./img/5000rub.jpg" alt="sometext" />
+            <button class="btn fivethousand">-</button>
+            <b id="counter5000">0</b>
+            <button class="btn fivethousand">+</button>
+        </div>
+    </div>
+    <div class="end">
+    <div class="input">
+        <h1 class="totalsum">Сумма на карте</h1>
+        <input placeholder="Только цифры" id="num1"/>
+        <h1 class="totalsum">Сумма в ПК</h1>
+        <input placeholder="в ПК (для себя)" id="pc"/>
+    </div>
+    <button onclick="func()" class="btnn">Посчитать</button>
+    <p id="result" class="rainbow"></p>
+    <p id="pcresult" class="rainbow pc"></p>
+    </div>
+    
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'A another Tag';
+    src: url("./fonts/aAnotherTag.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.spongebob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+}
+
+.spongebob img {
+    width: 250px;
+    height: 150px;
+}
+
+.tabak123 {
+    font-family: 'a Another Tag';
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.madeby {
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 8px;
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-right: 50px;
+}
+
+.cupura {
+    text-align: justify;
+    margin-left: 80px;
+}
+
+.cupura img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 220px;
+}
+
+.btn {
+    text-decoration: none;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #121212;
+    background-color: white;
+}
+
+.rainbow {
+    animation: colorRotate 2s ease-in-out 0s infinite;
+    font-size: 90px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+
+b {
+    margin-top: 15px;
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#number {
+    color: white;
+}
+
+.image img{
+    width: 100px;
+    height: 220px;
+}
+
+
+#result {
+    color: white;
+}
+
+.btnn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+    width: 320px;
+    color: white;
+    background-color: #121212;
+}
+
+.btnn:hover {
+    color: #121212;
+    background-color: white;
+}
+
+.end {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.totalsum {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: start;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid white;
+    color: white;
+    background-color: #121212;
+
+}
+
+input:hover {
+    background-color: white;
+    color: #121212;
+    border: 1px solid white;
+} 
+
+.pc {
+    font-size: 24px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1280px) { 
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 90px;
+        margin-right: 50px;
+    }
+    .cupura img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        width: 100px;
+        height: 220px;
+    }
+    .cupura {
+        text-align: justify;
+        margin-left: 60px;
+    }
+
+.spongebob {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+}
+}
