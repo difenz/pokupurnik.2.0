@@ -13,7 +13,7 @@ body {
 }
 
 .spongebob {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -26,12 +26,11 @@ body {
 }
 
 .tabak123 {
-    font-family: 'a Another Tag';
     color: white;
     text-align: center;
     align-items: center;
     font-size: 64px;
-    font-weight: 100;
+    font-weight: 700;
     margin-bottom: 0;
 }
 
@@ -40,7 +39,7 @@ body {
     text-align: center;
     align-items: center;
     font-size: 8px;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .container {
@@ -203,7 +202,7 @@ input:hover {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin-top: 0px;
+        margin-top: 15px;
         margin-right: 50px;
     }
 
@@ -214,24 +213,17 @@ input:hover {
         display: block;
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 0;
+        margin-bottom: 15px;
         width: 100px;
         height: 220px;
-        transform: rotate(90deg);
     }
-
-    b {
-        font-size: 18px;
-    }
-
-    .btn {
-        width: 40px;
-        height: 40px;
-    }
-
     .cupura {
         text-align: justify;
         margin-left: 60px;
+    }
+
+    .tabak123 {
+        font-size: 36px;
     }
 
 .spongebob {

@@ -1,15 +1,17 @@
-const counter50 = document.getElementById("counter50")
-const counter100 = document.getElementById("counter100")
-const counter200 = document.getElementById("counter200")
-const counter500 = document.getElementById("counter500")
-const counter1000 = document.getElementById("counter1000")
-const counter5000 = document.getElementById("counter5000")
-const counterBtn = document.querySelectorAll(".btn")
-const counterBtnHundred = document.querySelectorAll(".hundred")
-const counterBtnTwoHundred = document.querySelectorAll(".twohundred")
-const counterBtnFiveHundred = document.querySelectorAll(".fivehundred")
-const counterBtnThousand = document.querySelectorAll(".thousand")
-const counterBtnFiveThousand = document.querySelectorAll(".fivethousand")
+const counter50 = document.getElementById("counter50");
+const counter100 = document.getElementById("counter100");
+const counter200 = document.getElementById("counter200");
+const counter500 = document.getElementById("counter500");
+const counter1000 = document.getElementById("counter1000");
+const counter5000 = document.getElementById("counter5000");
+const counterBtn = document.querySelectorAll(".btn");
+const counterBtnHundred = document.querySelectorAll(".hundred");
+const counterBtnTwoHundred = document.querySelectorAll(".twohundred");
+const counterBtnFiveHundred = document.querySelectorAll(".fivehundred");
+const counterBtnThousand = document.querySelectorAll(".thousand");
+const counterBtnFiveThousand = document.querySelectorAll(".fivethousand");
+const easterBtn = document.getElementById("easteregg");
+const spongebobModal = document.getElementsByClassName("spongebob")[0];
 
 let result50 = 0;
 let result100 = 0;
@@ -18,6 +20,10 @@ let result500 = 0;
 let result1000 = 0;
 let result5000 = 0;
 
+
+easterBtn.onclick = function() {
+    spongebobModal.style.display = "flex";
+  }
 
 counterBtn.forEach((el, index) => {
     el.addEventListener('click', () => {
