@@ -206,6 +206,10 @@ input:hover {
         margin-top: 90px;
         margin-right: 50px;
     }
+
+    input { 
+        border-radius: 0;
+    }
     .cupura img {
         display: block;
         margin: 0 auto;
