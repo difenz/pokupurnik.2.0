@@ -99,3 +99,6 @@ function func() {
     let pc = Number(document.getElementById('pc').value);
     document.getElementById("pcresult").innerHTML = "В ПК: " + pc;
     }
+
+
+// made by german novikov
