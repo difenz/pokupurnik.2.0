@@ -214,10 +214,21 @@ input:hover {
         display: block;
         margin: 0 auto;
         margin-top: 50px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
         width: 100px;
         height: 220px;
+        transform: rotate(90deg);
     }
+
+    b {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+    }
+
     .cupura {
         text-align: justify;
         margin-left: 60px;
