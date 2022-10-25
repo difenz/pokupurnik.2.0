@@ -27,6 +27,11 @@ body {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.tabak123:hover {
+    transform: scale(1.2);
 }
 
 .madeby {
@@ -42,7 +47,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 90px;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 
 .cupura {
@@ -107,6 +112,11 @@ b {
     margin: 15px;
     color: white;
     cursor: pointer;
+}
+
+.grey {
+    font-size: 8px;
+    color: gray;
 }
 
 #number {
@@ -188,8 +198,10 @@ input:hover {
 
 .pc {
     font-size: 24px;
-    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 100px;
 }
+
 
 @media screen and (max-width: 1280px) { 
     .container {
@@ -218,7 +230,7 @@ input:hover {
     }
 
     .tabak123 {
-        font-size: 36px;
+        font-size: 54px;
     }
 
 .spongebob {

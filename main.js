@@ -3,12 +3,14 @@ const counter100 = document.getElementById("counter100");
 const counter200 = document.getElementById("counter200");
 const counter500 = document.getElementById("counter500");
 const counter1000 = document.getElementById("counter1000");
+const counter2000 = document.getElementById("counter2000");
 const counter5000 = document.getElementById("counter5000");
 const counterBtn = document.querySelectorAll(".btn");
 const counterBtnHundred = document.querySelectorAll(".hundred");
 const counterBtnTwoHundred = document.querySelectorAll(".twohundred");
 const counterBtnFiveHundred = document.querySelectorAll(".fivehundred");
 const counterBtnThousand = document.querySelectorAll(".thousand");
+const counterBtnTwoThousand = document.querySelectorAll(".twothousand");
 const counterBtnFiveThousand = document.querySelectorAll(".fivethousand");
 const easterBtn = document.getElementById("easteregg");
 const spongebobModal = document.getElementsByClassName("spongebob")[0];
@@ -18,8 +20,8 @@ let result100 = 0;
 let result200 = 0;
 let result500 = 0;
 let result1000 = 0;
+let result2000 = 0;
 let result5000 = 0;
-
 
 easterBtn.onclick = function() {
     spongebobModal.style.display = "flex";
@@ -81,6 +83,17 @@ counterBtnThousand.forEach((el, index) => {
     });
 });
 
+counterBtnTwoThousand.forEach((el, index) => {
+    el.addEventListener('click', () => {
+        if(index === 0 && result2000 > 0) {
+            result2000--;
+        } else if(index === 1) {
+            result2000++;
+        }
+        counter2000.textContent = result2000;
+    });
+});
+
 counterBtnFiveThousand.forEach((el, index) => {
     el.addEventListener('click', () => {
         if(index === 0 && result5000 > 0) {
@@ -100,10 +113,12 @@ function func() {
     resultfivehundred = parseInt(result500) * 500;
     resultthousand = parseInt(result1000) * 1000;
     resultfivethousand = parseInt(result5000) * 5000;
+    resulttwothousand = parseInt(result2000) * 2000;
     let num1 = Number(document.getElementById("num1").value);
-    document.getElementById("result").innerHTML = parseInt(num1) + parseInt(resultfifty) + parseInt(resulthundred) + parseInt(resulttwohundred) + parseInt(resultfivehundred) + parseInt(resultthousand) + parseInt(resultfivethousand);
+    let meloch = Number(document.getElementById("meloch").value);
+    document.getElementById("result").innerHTML = parseInt(meloch) + parseInt(num1) + parseInt(resultfifty) + parseInt(resulthundred) + parseInt(resulttwohundred) + parseInt(resultfivehundred) + parseInt(resultthousand) + parseInt(resulttwothousand) + parseInt(resultfivethousand) + String(" ₽");
     let pc = Number(document.getElementById('pc').value);
-    document.getElementById("pcresult").innerHTML = "В ПК: " + pc;
+    document.getElementById("pcresult").innerHTML = "В ПК: " + pc + " ₽";
     }
 
 

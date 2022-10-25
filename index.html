@@ -44,6 +44,12 @@
             <b id="counter1000">0</b>
             <button class="btn thousand">+</button>
         </div>
+        <div class="2000rub cupura">
+            <img src="./img/2000rub.jpg" alt="sometext" />
+            <button class="btn twothousand">-</button>
+            <b id="counter2000">0</b>
+            <button class="btn twothousand">+</button>
+        </div>
         <div class="5000rub cupura">
             <img src="./img/5000rub.jpg" alt="sometext" />
             <button class="btn fivethousand">-</button>
@@ -53,12 +59,14 @@
     </div>
     <div class="end">
     <div class="input">
-        <h1 class="totalsum">Наличка</h1>
-        <input placeholder="Не забудьте вычесть 3000" id="cash"/>
         <h1 class="totalsum">Сумма на карте</h1>
-        <input placeholder="Только цифры" id="num1"/>
-        <h1 class="totalsum">Сумма в ПК</h1>
-        <input placeholder="в ПК (для себя)" id="pc"/>
+        <input id="num1"/>
+        <h1 class="totalsum">Мелочь</h1>
+        <input id="meloch"/>
+        <h1 class="totalsum">Наличка <span class="grey">&nbsp;*Поле для себя</span></h1>
+        <input placeholder="Не забудьте вычесть 3 тыс." id="cash"/>
+        <h1 class="totalsum">Сумма в ПК <span class="grey">&nbsp;*Поле для себя</span></h1>
+        <input id="pc"/>
     </div>
     <button onclick="func()" class="btnn">Посчитать</button>
     <p id="result" class="rainbow"></p>
