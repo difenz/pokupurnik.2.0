@@ -83,16 +83,6 @@ counterBtnThousand.forEach((el, index) => {
     });
 });
 
-counterBtnTwoThousand.forEach((el, index) => {
-    el.addEventListener('click', () => {
-        if(index === 0 && result2000 > 0) {
-            result2000--;
-        } else if(index === 1) {
-            result2000++;
-        }
-        counter2000.textContent = result2000;
-    });
-});
 
 counterBtnFiveThousand.forEach((el, index) => {
     el.addEventListener('click', () => {
@@ -113,10 +103,9 @@ function func() {
     resultfivehundred = parseInt(result500) * 500;
     resultthousand = parseInt(result1000) * 1000;
     resultfivethousand = parseInt(result5000) * 5000;
-    resulttwothousand = parseInt(result2000) * 2000;
     let num1 = Number(document.getElementById("num1").value);
     let meloch = Number(document.getElementById("meloch").value);
-    document.getElementById("result").innerHTML = parseInt(meloch) + parseInt(num1) + parseInt(resultfifty) + parseInt(resulthundred) + parseInt(resulttwohundred) + parseInt(resultfivehundred) + parseInt(resultthousand) + parseInt(resulttwothousand) + parseInt(resultfivethousand) + String(" ₽");
+    document.getElementById("result").innerHTML = parseInt(meloch) + parseInt(num1) + parseInt(resultfifty) + parseInt(resulthundred) + parseInt(resulttwohundred) + parseInt(resultfivehundred) + parseInt(resultthousand) + parseInt(resultfivethousand) + String(" ₽");
     let pc = Number(document.getElementById('pc').value);
     document.getElementById("pcresult").innerHTML = "В ПК: " + pc + " ₽";
     }
